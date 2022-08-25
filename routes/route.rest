@@ -1,0 +1,34 @@
+//get all
+GET http://localhost:3000/subs
+
+###
+
+//get one
+GET http://localhost:3000/subs/6307c1d8d979341f35706195
+
+###
+
+//create 
+
+POST http://localhost:3000/subs
+Content-Type: application/json
+
+{
+    "name": "sedat2",
+    "substoChannel": "own channel"
+}
+
+###
+
+DELETE http://localhost:3000/subs/6307c0de529e5128cbcbed59
+
+###
+
+PATCH http://localhost:3000/subs/6307c1fad979341f3570619e
+Content-Type: application/json
+
+{
+    "name": "sedatXXX",
+    "substoChannel": "own channel"
+}
+
